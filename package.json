@@ -4,7 +4,7 @@
   "description": "Dependencies for my CSE341 Web Backend Development II class",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node server.js"
   },
   "author": "Dallin Gilbert",
   "license": "ISC",
