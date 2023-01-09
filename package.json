@@ -1,10 +1,12 @@
 {
   "name": "cse341",
   "version": "1.0.0",
-  "description": "Dependencies for my CSE341 Web Backend Development II class",
-  "main": "index.js",
+  "description": "CSE341 Web Backend Development II class",
+  "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart": "nodemon server.js",
+    "start": "server.js"
   },
   "author": "Dallin Gilbert",
   "license": "ISC",
