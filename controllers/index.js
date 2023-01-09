@@ -1,4 +1,5 @@
-const getNames = (req, res, next) => {
+const getNames = (req, res) => {
+    console.log('Getting names\n');
     res.send('Dallin Gilbert');
 }
 

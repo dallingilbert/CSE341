@@ -1,5 +1,6 @@
 // Localhost testing
-GET http://localhost:3000/names HTTP/1.1
+GET http://localhost:3000/ HTTP/1.1
+
 
 ### URL for render testing
-GET https://gilbert-cse341.onrender.com/names HTTP/1.1
+GET https://gilbert-cse341.onrender.com/ HTTP/1.1
