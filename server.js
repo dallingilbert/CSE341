@@ -1,14 +1,19 @@
 const express = require('express');
 const app = express();
 const mongodb = require('./db/connection');
+const bodyParser = require('body-parser');
+const PORT = 3000;
 
-app.get('/', require('./routes/index'));
+
+app
+.use(bodyParser.urlencoded( {extended: true}))
+.use(bodyParser.json())
+.use('/', require('./routes'))
 
 mongodb.initDb((err, mongodb ) => {
     if (err) {
         console.log(err);
     } else {
-        console.log('Connected to MongoDB successfully!');
-        app.listen(3000, () => console.log('Server running on port 3000'));
+        app.listen(PORT, () => console.log(`Connected to DB and running on port: ${ PORT }`));
     }
 });
