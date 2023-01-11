@@ -1,6 +1,31 @@
-// Localhost testing
+### LOCALHOST
+// Return a name
 GET http://localhost:3000/ HTTP/1.1
 
+### Return all contact documents
+GET http://localhost:3000/contacts HTTP/1.1
 
-### URL for render testing
+### Return a contact document by ID
+GET http://localhost:3000/contacts/63bba3191beb4457c9bcccc1 HTTP/1.1
+
+### Return a contact document by ID
+GET http://localhost:3000/contacts/63bba24e1beb4457c9bcccbf HTTP/1.1
+
+### Return a contact document by ID
+GET http://localhost:3000/contacts/63bba3c11beb4457c9bcccc2 HTTP/1.1
+
+### PRODUCTION 
+// Get names
 GET https://gilbert-cse341.onrender.com/ HTTP/1.1
+
+### Return all contact documents
+GET https://gilbert-cse341.onrender.com/contacts HTTP/1.1
+
+### Return a contact document by ID
+GET https://gilbert-cse341.onrender.com/contacts/63bba3191beb4457c9bcccc1 HTTP/1.1
+
+### Return a contact document by ID
+GET https://gilbert-cse341.onrender.com/contacts/63bba24e1beb4457c9bcccbf HTTP/1.1
+
+### Return a contact document by ID
+GET https://gilbert-cse341.onrender.com/contacts/63bba3c11beb4457c9bcccc2 HTTP/1.1
