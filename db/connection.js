@@ -2,9 +2,6 @@ const { MongoClient} = require('mongodb');
 const dotenv = require('dotenv');
 dotenv.config();
 
-// Connection URI
-const mongoURL = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@webbackenddev.zwlai5b.mongodb.net/?retryWrites=true&w=majority`;
-
 let _db; 
 
 const initDb = cb => {
@@ -13,7 +10,7 @@ const initDb = cb => {
         return cb(null, _db);
     }
     
-    MongoClient.connect(mongoURL)
+    MongoClient.connect(process.env.MONGODB_URI)
         .then(client => {
             _db = client;
             cb(null, _db);
